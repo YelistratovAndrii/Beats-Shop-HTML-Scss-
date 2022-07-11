@@ -1,0 +1,27 @@
+.info-container {
+  margin: 0 40px 0 0;
+
+  @include e(img-info) {
+    @include m(dt-white) {
+      color: $colorWhite;
+    }
+  }
+
+  @include e(title) {
+    @include m(dt-white) {
+      color: $colorWhite;
+    }
+  }
+
+  @include e(price) {
+    @include m(dt-white) {
+      color: $colorWhite;
+    }
+  }
+
+  @include e(price-info) {
+    @include m(dt-yellow) {
+      color: $colorYellow;
+    }
+  }
+}

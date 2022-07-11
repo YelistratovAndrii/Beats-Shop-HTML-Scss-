@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-family: $baseFontFamily;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: $fontWeight500;
+}
+
+.width-container {
+  @include m(header) {
+    padding: 11px 37px 16px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

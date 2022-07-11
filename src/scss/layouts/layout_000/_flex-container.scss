@@ -1,0 +1,8 @@
+.flex-container {
+  padding: 15px 15px 45px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-grow: 1;
+}

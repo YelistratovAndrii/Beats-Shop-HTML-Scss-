@@ -1,0 +1,19 @@
+.form {
+  transition: all 0.5s ease;
+
+  @include e(label) {
+    & > input {
+      &:hover {
+        box-shadow: 0 0 10px $colorBlack;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  @include e(submit) {
+    &:hover {
+      box-shadow: 0 0 10px $colorBlack;
+      transition: all 0.5s ease;
+    }
+  }
+}

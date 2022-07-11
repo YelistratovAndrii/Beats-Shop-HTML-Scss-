@@ -1,0 +1,7 @@
+.first-container {
+  padding-top: 80px;
+
+  @include e(dark-background) {
+    height: 540px;
+  }
+}

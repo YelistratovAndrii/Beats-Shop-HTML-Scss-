@@ -1,0 +1,31 @@
+.footer {
+  justify-content: space-between;
+  padding: 60px 90px 20px 42px;
+
+  @include e(logo-link) {
+    margin: 0 10px 0 0;
+  }
+}
+
+.footer-nav {
+  flex-grow: 0;
+  flex-basis: 690px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.follow-us {
+  width: initial;
+
+  @include e(title) {
+    padding: 0;
+    font-size: rem(24px);
+    line-height: rem(31px);
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  @include e(link-container) {
+    justify-content: center;
+  }
+}

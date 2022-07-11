@@ -1,0 +1,63 @@
+.form-container {
+  background-color: $colorBgLight;
+  padding: 40px 20px 64px;
+  justify-content: center;
+  align-self: center;
+  flex-basis: 100%;
+}
+
+.form {
+  width: 100%;
+  max-width: 507px;
+  margin: auto;
+
+  @include e(title) {
+    font-weight: $fontWeight700;
+    font-size: rem(50px);
+    line-height: rem(55px);
+    color: $colorMainDark;
+    margin: 0 auto 17px;
+    text-align: center;
+  }
+
+  @include e(label) {
+    width: 100%;
+
+    & > span {
+      font-weight: $fontWeight400;
+      font-size: rem(14px);
+      line-height: rem(17px);
+      color: $colorMainDark;
+      display: block;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    & > input {
+      box-sizing: border-box;
+      border: 1px solid $colorFormGrey;
+      padding: 0 22px;
+      height: 41px;
+      border-radius: 100px;
+      // margin: auto;
+      margin-bottom: 19px;
+      width: 100%;
+    }
+  }
+
+  @include e(submit) {
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 41px;
+    background-color: $colorYellow;
+    text-transform: uppercase;
+    font-weight: $fontWeight600;
+    font-size: rem(14px);
+    line-height: rem(17px);
+    cursor: pointer;
+  }
+}

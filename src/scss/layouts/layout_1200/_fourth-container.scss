@@ -1,0 +1,10 @@
+.fourth-container {
+  @include e(flex-container) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include e(img-container) {
+    order: 1;
+  }
+}

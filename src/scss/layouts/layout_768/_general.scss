@@ -1,0 +1,5 @@
+.width-container {
+  @include m(header) {
+    padding: 15px 35px 15px 20px;
+  }
+}

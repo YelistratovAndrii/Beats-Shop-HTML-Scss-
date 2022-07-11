@@ -1,0 +1,33 @@
+.third-container {
+  width: 100%;
+  background-color: $colorYellow;
+  position: relative;
+  padding-bottom: 35px;
+
+  @include e(bg-img-container) {
+    display: block;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    background-image: url(../images/BgDesktop.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include e(img-container) {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 701px;
+    position: relative;
+    z-index: 1;
+
+    > img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

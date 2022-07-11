@@ -1,0 +1,45 @@
+.header {
+  background-color: $colorMainDark;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include e(logo) {
+    margin: 0;
+    padding: 0;
+    display: block;
+    > span {
+      @include invis;
+    }
+  }
+
+  @include e(logo-link) {
+    display: block;
+    width: 27px;
+    height: 27px;
+  }
+
+  @include e(ul) {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 172px;
+  }
+
+  @include e(link) {
+    text-decoration: none;
+  }
+
+  @include e(nav-burger) {
+    display: block;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-size: rem(27px);
+}

@@ -1,0 +1,24 @@
+.footer {
+  @include e(logo-link) {
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.footer-nav {
+  @include e(link) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.follow-us {
+  @include e(svg) {
+    &:hover {
+      --spriteColor: #ffc700;
+    }
+  }
+}

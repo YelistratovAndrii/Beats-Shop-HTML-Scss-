@@ -1,0 +1,26 @@
+.second-container {
+  padding-bottom: 90px;
+
+  @include e(img-container) {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 755px;
+    position: relative;
+
+    > img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @include e(slider-container) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

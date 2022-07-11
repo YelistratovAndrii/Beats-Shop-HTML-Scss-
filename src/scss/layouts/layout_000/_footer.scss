@@ -1,0 +1,106 @@
+.footer {
+  padding: 30px;
+  background-color: $colorMainDark;
+
+  @include e(logo) {
+    margin: 0;
+    padding: 0;
+    display: block;
+    > span {
+      @include invis;
+    }
+  }
+
+  @include e(logo-link) {
+    margin: 0 auto 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  @include e(copyright) {
+    margin: 0;
+    font-weight: $fontWeight500;
+    font-size: rem(12px);
+    line-height: rem(15px);
+    color: $colorPriceInfoGrey;
+  }
+}
+
+.footer-nav {
+  @include e(block) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid black;
+      transform: translateX(-30px);
+    }
+  }
+
+  @include e(title) {
+    margin: 0;
+    padding: 6px 0 9px;
+    font-weight: $fontWeight600;
+    font-size: rem(18px);
+    line-height: rem(31px);
+    color: $colorWhite;
+  }
+
+  @include e(ul) {
+    @include m(hide) {
+      display: none;
+    }
+  }
+
+  @include e(li) {
+    &:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
+  @include e(link) {
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: $fontWeight600;
+    font-size: rem(12px);
+    line-height: rem(22px);
+    color: $colorFormGrey;
+
+    &:last-of-type {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.follow-us {
+  @include e(title) {
+    padding: 6px 0 0;
+    margin: 0 0 15px;
+    font-weight: $fontWeight600;
+    font-size: rem(18px);
+    line-height: rem(31px);
+    color: $colorWhite;
+  }
+
+  @include e(link-container) {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  @include e(link) {
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include e(svg) {
+    display: block;
+    width: 35px;
+    height: 35px;
+    --spriteColor: white;
+    --bgColor: #2b2835;
+  }
+}

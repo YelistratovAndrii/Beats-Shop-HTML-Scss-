@@ -1,0 +1,11 @@
+.info-container {
+  padding: 0;
+  margin-left: 50px;
+
+  @include e(title) {
+    font-weight: $fontWeight700;
+    font-size: rem(40px);
+    line-height: rem(55px);
+    margin: 0 0 25px;
+  }
+}

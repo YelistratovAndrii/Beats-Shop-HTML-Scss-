@@ -1,0 +1,171 @@
+.info-container {
+  padding: 0 65px 0 20px;
+
+  @include m(first) {
+    max-width: 508px;
+  }
+
+  @include m(second) {
+    max-width: 474px;
+  }
+
+  @include m(third) {
+    max-width: 513px;
+  }
+
+  @include m(fourth) {
+    max-width: 513px;
+  }
+
+  @include e(img-info) {
+    font-weight: $fontWeight500;
+    font-size: 1rem;
+    line-height: rem(20px);
+    letter-spacing: 1px;
+    margin: 13px 0 7px 0;
+    margin: 0 0 7px 0;
+  }
+
+  @include e(title) {
+    font-weight: $fontWeight700;
+    font-size: rem(32px);
+    line-height: rem(35px);
+    margin: 0 0 15px;
+  }
+
+  @include e(radio-title) {
+    font-weight: $fontWeight400;
+    font-size: rem(32px);
+    margin: 0 0 10px;
+  }
+
+  @include e(radio-span) {
+    font-weight: $fontWeight400;
+    font-size: 1rem;
+    line-height: rem(20px);
+    margin-bottom: 19px;
+  }
+
+  @include e(radio-container) {
+    margin: 19px 0 24px;
+    display: flex;
+  }
+
+  @include e(radio) {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $colorRadioGrey;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include m(white) {
+      background-color: $colorWhite;
+    }
+
+    @include m(red) {
+      background-color: $colorRed;
+    }
+
+    @include m(black) {
+      background-color: $colorBlack;
+    }
+
+    & > input {
+      display: none;
+
+      &:checked + .info-container__checkmark {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include e(checkmark) {
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  @include e(img-description) {
+    font-weight: $fontWeight400;
+    font-size: rem(14px);
+    line-height: rem(27px);
+    margin: 0 0 26px;
+    color: $colorTextInfoBlack;
+
+    @include m(third) {
+      max-width: 310px;
+    }
+
+    @include m(fourth) {
+      max-width: 390px;
+    }
+  }
+
+  @include e(price-container) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 354px;
+  }
+
+  @include e(price) {
+    font-weight: $fontWeight400;
+    font-size: rem(32px);
+    line-height: rem(39px);
+    margin-right: 20px;
+  }
+
+  @include e(buy) {
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    min-height: 41px;
+
+    > span {
+      text-transform: uppercase;
+      font-weight: $fontWeight600;
+      font-size: rem(14px);
+      line-height: rem(17px);
+    }
+
+    @include m(yellow) {
+      background-color: $colorYellow;
+
+      > span {
+        color: $colorBlack;
+      }
+    }
+
+    @include m(black) {
+      background-color: $colorBlack;
+
+      > span {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  @include e(price-info) {
+    margin: 16px 0 0;
+    font-weight: $fontWeight500;
+    font-size: rem(13px);
+    line-height: rem(18px);
+    color: $colorPriceInfoGrey;
+  }
+}

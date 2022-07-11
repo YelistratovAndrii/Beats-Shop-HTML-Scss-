@@ -1,0 +1,8 @@
+.first-container {
+  padding-top: 0px;
+
+  @include e(flex-container) {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+.width-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 10px;
+
+  @include m(header) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container-fluid {
+  @include m(footer) {
+    background-color: $colorMainDark;
+  }
+}

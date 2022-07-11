@@ -1,0 +1,29 @@
+$baseFontSize: 16px;
+$baseFontFamily: 'Montserrat', sans-serif;
+$fontWeight400: 400;
+$fontWeight500: 500;
+$fontWeight600: 600;
+$fontWeight700: 700;
+
+$mobilePadding: (12px / $baseFontSize) * 1rem;
+$desktopPadding: 1rem;
+
+// Paths
+
+$imagesPath: '../images/';
+$fontsPath: '../fonts/';
+$usersFilesPath: '../userfiles/';
+
+// Colors
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorMainDark: #2b2835;
+$colorHeaderDarker: #191720;
+$colorBgLight: #f8f8f9;
+$colorYellow: #ffc700;
+$colorGold: #9d8220;
+$colorRed: #dd5656;
+$colorFormGrey: #bfbfbf;
+$colorTextInfoBlack: #030303;
+$colorPriceInfoGrey: #6a6a6a;
+$colorRadioGrey: #d1d1d1;

@@ -1,0 +1,18 @@
+.fourth-container {
+  padding: 40px 0 55px;
+  background-color: $colorBgLight;
+  width: 100%;
+
+  @include e(img-container) {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 739px;
+
+    > img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

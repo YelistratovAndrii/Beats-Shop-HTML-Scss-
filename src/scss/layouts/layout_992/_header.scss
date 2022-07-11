@@ -1,0 +1,22 @@
+.header {
+  @include e(logo-link) {
+    &:hover {
+      opacity: 50%;
+      transition: all 0.5s ease;
+    }
+  }
+
+  @include e(link) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $colorYellow;
+    }
+  }
+
+  @include e(nav-burger) {
+    &:hover {
+      opacity: 50%;
+      transition: all 0.5s ease;
+    }
+  }
+}
